@@ -16,7 +16,7 @@ const useRestaurantCards = (setListOfFilteredRestaurants) => {
       setListOfRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
       setListOfFilteredRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
     } catch (error) {
-      throw new error("can't load the restuarants")
+      throw new Error("can't load the restuarants")
     }
   }
 
